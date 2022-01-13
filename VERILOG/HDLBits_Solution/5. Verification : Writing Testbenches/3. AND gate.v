@@ -1,19 +1,17 @@
-module top_module ( output reg A, output reg B );
-
-    // generate input patterns here
-    initial begin
-	    
-	A = 1'b0;
-        B = 1'b0;
-        #10;
-        A = 1'b1;
-        #5
-        B = 1'b1;
-        #5
-        A = 1'b0;
-        #20
-        B = 1'b0; 
-	    
-    end
+module top_module();
+    reg [1:0] in;
+    wire out;
+    
+    andgate D1 (in, out);
+    
+    initial begin 
+        in [1] = 1'b0;
+        in [0] = 1'b0;
+        
+        #10 in[0] = 1'b1;
+        #10 in[1] = 1'b1;
+            in[0] = 1'b0;	
+        #10 in[0] = 1'b1;
+     end
 
 endmodule
