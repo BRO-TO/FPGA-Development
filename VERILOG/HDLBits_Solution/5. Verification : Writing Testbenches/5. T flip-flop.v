@@ -23,10 +23,10 @@ module top_module ();
     
     always @(posedge clk) begin
         if (reset) begin
-            t = 0;
+                t = 0;
         end
         else begin
- 		    t = 1;
+ 		        t = 1;
         end
     end
 
