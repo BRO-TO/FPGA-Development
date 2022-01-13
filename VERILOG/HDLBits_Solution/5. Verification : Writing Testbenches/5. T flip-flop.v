@@ -26,7 +26,7 @@ module top_module ();
             t = 0;
         end
         else begin
- 			t = 1;
+ 		    t = 1;
         end
     end
 
