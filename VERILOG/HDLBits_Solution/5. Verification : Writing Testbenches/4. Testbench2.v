@@ -21,7 +21,7 @@ module top_module();
     end
     
     initial begin
-    	  #0  s = 3'd2;
+    	#0  s = 3'd2;
         #10 s = 3'd6;
         #10 s = 3'd2;
         #10 s = 3'd7;
